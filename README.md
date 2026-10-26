@@ -6,9 +6,9 @@
 ## 채팅 실행 방법
 1. **저장소 받기**: `https://github.com/wjsdpcks7-chan/TCP-Chat.git`
 
-2. **server.py 실행**: `python3 server.py'
+2. **server.py 실행**: `python3 server.py`
 
-3. **client.py 실행**: 다른 터미널 열고. `python3 client.py' -원하는 수만큼'
+3. **client.py 실행**: 다른 터미널 열고. `python3 client.py` -원하는 수만큼
 
 4. **닉네임 설정 후 채팅 시작**
 

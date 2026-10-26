@@ -19,16 +19,20 @@ def handle_client(client_socket, client_address):
     clients.append(client_socket)
 
     while True:
-        chat = client_socket.recv(1024)
-
+        try:
+            chat = client_socket.recv(1024)
+        except ConnectionResetError:
+            break
         if not chat:
-            print(f"종료: {client_address}")
             break
 
         message = f"[{nickname}]: {chat.decode('utf-8')}"
 
         broadcast(message.encode('utf-8'), client_socket)
 
+    clients.remove(client_socket)
+    print(f"종료: {client_address}")
+    broadcast(f"[{nickname}]님이 퇴장했습니다.".encode('utf-8'), client_socket)
     client_socket.close()
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

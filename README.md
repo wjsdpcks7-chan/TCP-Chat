@@ -1,7 +1,7 @@
 # TCP를 활용한 단체 채팅 프로그램 제작 과제
 **소개**: 터미널에서 여러 client들이 서로 채팅하는 프로그램
 
-**목적**: TCP 및 Thread를 활용한 숙지를 위한 과제
+**목적**: TCP 및 Thread를 숙지를 위한 과제
 
 ## 채팅 실행 방법
 1. **저장소 받기**: `https://github.com/wjsdpcks7-chan/TCP-Chat.git`
